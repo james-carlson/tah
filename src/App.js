@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Landing from './components/Landing';
-import Menu from './components/Menu';
+import Home from './components/Home/Home'
+import About from './components/About/About'
+import Menu from './components/Menu/Menu';
+import OrderForm from './components/OrderForm/OrderForm';
 
 // TODO:
 // 
 
 class App extends Component {
-  constructor(){
+  constructor() {
     super()
 
     this.state = {
@@ -19,13 +21,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-      <Landing variables="mew" />
-      <h1>Tamales @ Work</h1>
-      <div className="nav">
-      Order by 10, we'll have it ready when you want between 12 and 2.
-      <Menu />
-      </div>
+      <div>
+          <Home />
+          <About />
+          <Menu />
+          <OrderForm />
       </div>
     );
   }
