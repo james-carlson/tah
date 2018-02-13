@@ -3,7 +3,7 @@ $action-button-color: rgba(232, 110, 45, 0.783);
 $nav-bg: rgba(113, 82, 62, 0.577);
 $nav-hover: lighten($nav-bg, 20%);
 $nav-hover-bottom-border: darken($nav-bg, 10%);
-$bottom-border-thickness: 2px;
+$bottom-border-thickness: .2rem;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -14,11 +14,13 @@ $bottom-border-thickness: 2px;
   }
 
 @mixin accent-shadow($original){
-    box-shadow: (-5px 5px lighten($original, 10%));
+    box-shadow: (-.25rem .35rem lighten($original, 10%));
 }
 
 #order-now-button {
     background-color: $action-button-color;
+    margin-bottom: .4rem;
+    border-bottom: 0; 
     @include border-radius(1rem);
     @include accent-shadow($action-button-color);
 }
@@ -31,10 +33,10 @@ $bottom-border-thickness: 2px;
     margin: 0;
     justify-content: center;
     background-color: $nav-bg;
+    border-bottom: $bottom-border-thickness solid $nav-bg;
     li, a, a:visited {
         list-style-type: none;
         font-size: 1.6rem;
-        border-bottom: $bottom-border-thickness solid $nav-bg;
         padding: 1rem 1rem 1rem 1rem;
         list-style-type: none;
         text-decoration: none;
@@ -45,6 +47,11 @@ $bottom-border-thickness: 2px;
         background-color: $nav-hover;
     }
     li#order-now-button:hover {
+        background-color: $action-button-color;
+    }
+    li#order-now-button:active {
+        transform: translate(-.2rem, .3rem);
         background-color: $nav-bg;
+        box-shadow: (-.001rem .001rem darken($nav-bg, 10%));
     }
 }
