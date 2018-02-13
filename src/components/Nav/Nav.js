@@ -13,12 +13,12 @@ export default class Nav extends Component {
 
     render() {
         return (
-            <div className="nav">
-                <div><a href="#home">Home</a></div>
-                <div><a href="#home">About</a></div>
-                <div><a href="#home">Menu</a></div>
-                <div id="order-now-button"><a href="#home">ORDER NOW</a></div>
-            </div>
+            <ul className="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#home">Menu</a></li>
+                <li id="order-now-button"><a href="#home">ORDER NOW</a></li>
+            </ul>
         )
     }
 }

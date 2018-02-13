@@ -1,5 +1,9 @@
 $action-button-color: rgba(232, 110, 45, 0.783);
-$nav-bg: rgba(113, 82, 62, 0.995);
+// $nav-hover: rgba(143, 193, 94, 0.358);
+$nav-bg: rgba(113, 82, 62, 0.577);
+$nav-hover: lighten($nav-bg, 20%);
+$nav-hover-bottom-border: darken($nav-bg, 10%);
+$bottom-border-thickness: 2px;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -13,38 +17,34 @@ $nav-bg: rgba(113, 82, 62, 0.995);
     box-shadow: (-5px 5px lighten($original, 10%));
 }
 
-@mixin hover-effects($original){
-    background-color: linear-gradient($original, lighten($original, 90%));
-    font-weight: 200;
-}
-
 #order-now-button {
     background-color: $action-button-color;
-    padding: 1vw;
-    @include border-radius(2rem);
+    @include border-radius(1rem);
     @include accent-shadow($action-button-color);
 }
+
 
 .nav {
     position: absolute;
     width: 100%;
     display: flex;
+    margin: 0;
     justify-content: center;
     background-color: $nav-bg;
-    div {
+    li, a, a:visited {
+        list-style-type: none;
         font-size: 1.6rem;
+        border-bottom: $bottom-border-thickness solid $nav-bg;
+        padding: 1rem 1rem 1rem 1rem;
+        list-style-type: none;
+        text-decoration: none;
         color: #fff;
-        padding: 1vw;
-        margin-left: 4vw;
-        margin-right: 4vw;
-        margin-top: 1.5vw;
-        margin-bottom: 1.5vw;
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-        a:hover {
-            @include hover-effects($action-button-color);
-        }
+        text-align: center;
+    };
+    li:hover {
+        background-color: $nav-hover;
+    }
+    li#order-now-button:hover {
+        background-color: $nav-bg;
     }
 }
