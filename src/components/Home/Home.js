@@ -20,12 +20,11 @@ export default class Home extends React.Component {
                         <div className="title-1">TAMALES</div>
                         <div className="title-2">@ WORK</div>
                     </div>
-                    
-                        {/* <div>
-                        <div className="title-3">Or school. Or in meetings.</div>
-                        <div>Delicious, authentic food for startups and students.</div>
-                        <div>Order online and we'll have it ready for you.</div>
-                    </div> */}
+                </div>
+                <div className="home-container-subtext">
+                    <div className="title-3">Or school. Or in meetings.</div>
+                    <div>Delicious, authentic food for startups and students.</div>
+                    <div>Order online and we'll have it ready for you.</div>
                 </div>
             </div>
         )

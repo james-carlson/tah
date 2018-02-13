@@ -21,11 +21,11 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{display: 'flex', flexDirection: 'columns', position: 'absolute'}}>
           <Home />
-          <About />
-          <Menu />
-          <OrderForm />
+          {/* <About /> */}
+          {/* <Menu /> */}
+          {/* <OrderForm /> */}
       </div>
     );
   }

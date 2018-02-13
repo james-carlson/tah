@@ -5,7 +5,8 @@
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: rgba(113, 82, 62, 0.345)
