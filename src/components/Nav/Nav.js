@@ -16,7 +16,7 @@ export default class Nav extends Component {
             <div className="nav">
                 <div><a href="#home">Home</a></div>
                 <div><a href="#home">About</a></div>
-                <div><a href="#home">Menu</a></div>
+                <div><a href="#home">Menu</a></div>cd
                 <div id="order-now-button"><a href="#home">ORDER NOW</a></div>
             </div>
         )
