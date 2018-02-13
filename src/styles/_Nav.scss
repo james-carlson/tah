@@ -1,5 +1,5 @@
 $action-button-color: rgba(232, 110, 45, 0.783);
-$nav-bg: rgba(113, 82, 62, 0.345);
+$nav-bg: rgba(113, 82, 62, 0.995);
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
@@ -14,7 +14,8 @@ $nav-bg: rgba(113, 82, 62, 0.345);
 }
 
 @mixin hover-effects($original){
-    background: linear-gradient($original, darken($original, 30%));
+    background-color: linear-gradient($original, lighten($original, 90%));
+    font-weight: 200;
 }
 
 #order-now-button {
@@ -43,7 +44,7 @@ $nav-bg: rgba(113, 82, 62, 0.345);
             color: #fff;
         }
         a:hover {
-            @include hover-effects($nav-bg);
+            @include hover-effects($action-button-color);
         }
     }
 }

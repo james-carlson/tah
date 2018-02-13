@@ -40,7 +40,7 @@ export default class Home extends React.Component {
                         <div class="shell bottom-layer"></div>
                     </div>
                 </div>
-
+                
             </div>
         )
     }
