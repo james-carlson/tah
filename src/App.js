@@ -24,7 +24,7 @@ class App extends Component {
       <div style={{display: 'flex', flexDirection: 'columns', position: 'absolute'}}>
           <Home />
           {/* <About /> */}
-          {/* <Menu /> */}
+          <Menu />
           {/* <OrderForm /> */}
       </div>
     );

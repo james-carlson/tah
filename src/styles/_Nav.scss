@@ -1,4 +1,4 @@
-$action-button-color: rgba(232, 110, 45, 0.783);
+$action-button-color: rgb(232, 110, 45);
 // $nav-hover: rgba(143, 193, 94, 0.358);
 $nav-bg: rgba(113, 82, 62, 0.577);
 $nav-hover: lighten($nav-bg, 20%);
@@ -14,10 +14,11 @@ $bottom-border-thickness: .2rem;
   }
 
 @mixin accent-shadow($original){
-    box-shadow: (-.25rem .35rem lighten($original, 10%));
+    box-shadow: (-.25rem .25rem lighten($original, 10%));
 }
 
 #order-now-button {
+    margin-left: 1rem;
     background-color: $action-button-color;
     margin-bottom: .4rem;
     border-bottom: 0; 
@@ -28,6 +29,7 @@ $bottom-border-thickness: .2rem;
 
 .nav {
     position: absolute;
+    padding-top: .4rem;
     width: 100%;
     display: flex;
     margin: 0;
@@ -47,11 +49,11 @@ $bottom-border-thickness: .2rem;
         background-color: $nav-hover;
     }
     li#order-now-button:hover {
-        background-color: $action-button-color;
+        background-color: lighten($action-button-color, 2%);
     }
     li#order-now-button:active {
         transform: translate(-.2rem, .3rem);
-        background-color: $nav-bg;
+        background-color: darken($action-button-color, 10%);
         box-shadow: (-.001rem .001rem darken($nav-bg, 10%));
     }
 }

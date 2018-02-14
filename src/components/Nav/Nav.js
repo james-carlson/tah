@@ -17,7 +17,7 @@ export default class Nav extends Component {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#home">About</a></li>
                 <li><a href="#home">Menu</a></li>
-                <li id="order-now-button"><a href="#home">ORDER NOW</a></li>
+                <li id="order-now-button"><a href="#menu">ORDER NOW</a></li>
             </ul>
         )
     }
