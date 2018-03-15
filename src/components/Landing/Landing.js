@@ -5,11 +5,9 @@ export default function Landing(props) {
     return (
         <section className="landing">
             <Nav />
-            <section className="home-container-text">
-                <div className="titles-background">
-                    <header className="title-1">TAMALES</header>
-                    <header className="title-2">@ WORK</header>
-                </div>
+            <section className="titles-background">
+                <header className="title-1">TAMALES</header>
+                <header className="title-2">@ WORK</header>
             </section>
         </section>
     );

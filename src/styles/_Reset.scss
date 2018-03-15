@@ -4,7 +4,9 @@
 */
 
 ul, li {
-	padding: 0;
+    padding: 0;
+    -webkit-padding-start: 0;
+    display: flex;
 }
 /* HTML5 display-role reset for older browsers */
 // article, aside, details, figcaption, figure, 

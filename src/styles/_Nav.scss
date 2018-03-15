@@ -1,5 +1,4 @@
 $action-button-color: rgb(232, 110, 45);
-// $nav-hover: rgba(143, 193, 94, 0.358);
 $nav-bg: rgba(113, 82, 62, 0.577);
 $nav-hover: lighten($nav-bg, 20%);
 $nav-hover-bottom-border: darken($nav-bg, 10%);
@@ -14,7 +13,7 @@ $bottom-border-thickness: .2rem;
   }
 
 @mixin accent-shadow($original){
-    box-shadow: (-.25rem .25rem lighten($original, 10%));
+    box-shadow: (-.18rem .2rem lighten($original, 10%));
 }
 
 #order-now-button {
@@ -22,27 +21,27 @@ $bottom-border-thickness: .2rem;
     background-color: $action-button-color;
     margin-bottom: .4rem;
     border-bottom: 0; 
-    @include border-radius(1rem);
+    @include border-radius(.7rem);
     @include accent-shadow($action-button-color);
 }
 
-
-.nav {
-    position: absolute;
-    padding-top: .4rem;
-    width: 100%;
+nav {
+    position: fixed;
+    width: 100vw;
+    // box-sizing: border-box;
     display: flex;
-    margin: 0;
+    flex-direction: row;
+    margin-top: 0vh;
     justify-content: center;
     background-color: $nav-bg;
     border-bottom: $bottom-border-thickness solid $nav-bg;
     ul {
-        padding: 0;
-    }
+        font-weight: 300;
+    };
     li, a, a:visited {
         list-style-type: none;
         font-size: 1.6rem;
-        padding: 1rem 1rem 1rem 1rem;
+        padding: .1rem 1rem .1rem 1rem;
         list-style-type: none;
         text-decoration: none;
         color: #fff;
@@ -50,13 +49,20 @@ $bottom-border-thickness: .2rem;
     };
     li:hover {
         background-color: $nav-hover;
-    }
+        animation-name: nav-link-hover;
+        animation-duration: 1s;
+        border-top: .2rem solid lighten($action-button-color, 30%);
+    };
+    li#order-now-button {
+        font-weight: 450;
+        border-top: .2rem solid transparent;
+    };
     li#order-now-button:hover {
         background-color: lighten($action-button-color, 2%);
-    }
+    };
     li#order-now-button:active {
-        transform: translate(-.2rem, .3rem);
+        transform: translate(-.18rem, .2rem);
         background-color: darken($action-button-color, 10%);
         box-shadow: (-.001rem .001rem darken($nav-bg, 10%));
-    }
-}
+    };
+};
