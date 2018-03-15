@@ -4,7 +4,7 @@ export default class Menu extends React.Component {
 
     componentDidMount(){
         // fire call to backend to grab data from db
-
+        
     }
 
     render(){

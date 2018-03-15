@@ -12,36 +12,26 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <div className="home-bg">
-                <Nav />
-                <div className="home-container-text">
-                    <div className="titles-background">
-                        <div className="title-1">TAMALES</div>
-                        <div className="title-2">@ WORK</div>
-                    </div>
-                </div>
-                <div className="home-container-subtext">
-                    <div className="title-3">Or school. Or in meetings.</div>
-                    <div className="title-3">Delicious, authentic food for startups and students.</div>
-                    <div className="title-3">Order online and we'll have it ready for you.</div>
-                </div>
-                <div className="home-container-subtext">
-                    <div id="tacoWrapper">
-                        <div className="shell top-layer">
-                            <div className="shadow"></div>
-                            <div className="dots"></div>
-                            <div className="lip"></div>
+            <div>
+                <section className="home-bg">
+                    <Nav />
+                    <section className="home-container-text">
+                        <div className="titles-background">
+                            <header className="title-1">TAMALES</header>
+                            <header className="title-2">@ WORK</header>
                         </div>
-                        <div id="fillings">
-                            <div className="base_layer"></div>
-                            <div className="mixin"></div>
-                            <div className="condiment"></div>
-                        </div>
-                        <div className="shell bottom-layer"></div>
+                    </section>
+                </section>
+                <section className="home-container-subtext">
+                    <div style={{ width: "80%", margin: "auto" }}>
+                        <div className="title-3">Or school. Or in meetings.</div>
+                        <div className="title-3">Delicious, authentic food for startups and students.</div>
+                        <div className="title-3">Order online and we'll have it ready for you.</div>
                     </div>
-                </div>
-                
-            </div>
+                </section>
+
+
+            </div >
         )
     }
 
