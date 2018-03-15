@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './styles/main.css';
 import Home from './components/Home/Home'
-import About from './components/About/About'
-import Menu from './components/Menu/Menu';
-import OrderForm from './components/OrderForm/OrderForm';
 
-// TODO:
-// 
 
 class App extends Component {
   constructor() {
     super()
-
+    
     this.state = {
 
     }
@@ -23,9 +17,6 @@ class App extends Component {
     return (
       <div style={{display: 'flex', flexDirection: 'columns', position: 'absolute'}}>
           <Home />
-          {/* <About /> */}
-          {/* <Menu /> */}
-          {/* <OrderForm /> */}
       </div>
     );
   }

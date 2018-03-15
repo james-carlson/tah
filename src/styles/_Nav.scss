@@ -36,6 +36,9 @@ $bottom-border-thickness: .2rem;
     justify-content: center;
     background-color: $nav-bg;
     border-bottom: $bottom-border-thickness solid $nav-bg;
+    ul {
+        padding: 0;
+    }
     li, a, a:visited {
         list-style-type: none;
         font-size: 1.6rem;
