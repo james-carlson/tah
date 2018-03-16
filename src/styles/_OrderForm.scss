@@ -1,0 +1,25 @@
+.orderform {
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 90vw;
+    font-size: 1.5rem;
+    form {
+        // width: 100%;
+    }
+    .prompt {
+        background-color: yellowgreen;
+    }
+    #title {
+        text-align: center;
+        font-size: 3rem;
+    }
+    input {
+        font-size: 1.5rem;
+        border-bottom: 1px solid;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        background-color: lightgoldenrodyellow;
+    }
+}
