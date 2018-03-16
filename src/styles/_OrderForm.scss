@@ -1,25 +1,54 @@
+$form-accent-color: rgb(172, 219, 78);
+
 .orderform {
     padding-top: 10vh;
     padding-left: 5vw;
     padding-right: 5vw;
     width: 90vw;
     font-size: 1.5rem;
-    form {
-        // width: 100%;
+    .form-body {
+        margin-top: 5vh;
+        background-color: $form-accent-color;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 2rem;
+        box-shadow: (-.28rem .3rem darken($form-accent-color, 10%));
+    }
+    .form-row {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-between;
+        align-items: center;
+        // background-color: lighten($form-accent-color, 20%);
+        border-radius: 1rem;
+        padding: .5rem;
     }
     .prompt {
-        background-color: yellowgreen;
+        display: flex;
+        padding: .5rem;
+        flex-direction: column;
+        // margin-top: 5vh;
+    }
+    .answer {
+        padding-left: 2rem;
+        width: 70vw;
+        align-content: flex-end;
     }
     #title {
         text-align: center;
         font-size: 3rem;
+        margin-top: 6vh;
     }
     input {
         font-size: 1.5rem;
-        border-bottom: 1px solid;
         border-top: 0px;
         border-left: 0px;
         border-right: 0px;
         background-color: lightgoldenrodyellow;
+        border-radius: .5rem;
+        padding: .5rem .5rem .5rem 1rem;
+        border-bottom: 1px solid #000;
     }
 }
