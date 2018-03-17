@@ -1,18 +1,24 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Menu from '../Menu/Menu';
+import axios from 'axios';
+
 export default class OrderForm extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
             name: '',
             order: {},
+            offerings: {}
         }
     }
 
     componentDidMount(){
-        axios.get('api/getmenu').then(res => 
-        this.setState({offerings: res.data}))
+        axios.get('api/getmenu').then(res => {
+
+            console.log(res)
+            this.setState({offerings: res.data})
+        })
     }
 
     render() {

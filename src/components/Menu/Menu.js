@@ -10,7 +10,7 @@ export default class Menu extends React.Component {
     render(){
         return (
             <div id="#menu">
-                <h1>This is the Menu.</h1>
+                <h1>This is the Menu. We got {JSON.stringify(this.props.offerings)}</h1>
             </div>
         )
     }

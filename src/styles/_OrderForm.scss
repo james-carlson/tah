@@ -17,11 +17,9 @@ $form-accent-color: rgb(172, 219, 78);
     }
     .form-row {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: flex-start;
         align-content: space-between;
         align-items: center;
-        // background-color: lighten($form-accent-color, 20%);
         border-radius: 1rem;
         padding: .5rem;
     }
@@ -29,7 +27,6 @@ $form-accent-color: rgb(172, 219, 78);
         display: flex;
         padding: .5rem;
         flex-direction: column;
-        // margin-top: 5vh;
     }
     .answer {
         padding-left: 2rem;
