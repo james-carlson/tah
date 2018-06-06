@@ -1,3 +1,4 @@
 # Tamales @ Work
-Side project started for showing things at DevMountain. Built in React, uses SASS. Now a side project to explore some ideas. 
+React & Node. Uses SASS.  
+Initially a small project for showing concepts at DevMountain.  Now working on fleshing out everything just because I like the idea.
 
